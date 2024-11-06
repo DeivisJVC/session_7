@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Formularios</h1>
+  </header>
+  <form action="login.php" method="post">
+    <fieldset>
+      <legend> <strong>Datos basicos</strong></legend>
+      <label for="name">Nombre</label>
+      <input type="text" placeholder="Nombre" required id="name">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required placeholder="Correo Electronico">
+      <label for="password">Contraseña</label>
+      <input type="password" name="password" id="password" placeholder="Contraseña">
+      <label for="date">fecha:</label>
+      <input type="date" name="date" id="date">
+
+      <label for="genero">Genero:</label>
+      <label for="genero">Masculino</label>
+      <input type="radio" name="genero" id="genero">
+      <label for="genero">Femenino</label>
+      <input type="radio" name="genero" id="genero">
+    </fieldset>
+    <fieldset id="form2">
+      <legend>Comentarios del evento</legend>
+      <label for="Comentarios">Nombre del evento</label><br>
+      <input type="text" name="Comentarios" id="Comentarios"><br>
+      <label for="Comentarios">Comentarios del evento</label><br>
+      <textarea name="Comentarios" id="Comentarios" cols="30" rows="2"></textarea><br>
+      <label for="hora_event">Hora del evento</label><br><br>
+      <input type="time" name="hora_event" id="hora_event" required><br>
+      <label for="lugar">Lugar del evento</label><br>
+      <select name="lugar" id="lugar"><br>
+        <option value="Aula Virtual">Aula Virtual</option>
+        <option value="Auditorio_Principal">Auditorio Principal</option>
+        <option value="Conferencia">Conferencia</option>
+      </select><br><br>
+      <label for="servicios">Servicios Adicionales</label><br>
+      <input type="checkbox" name="servicios" id="RSA1" value="Si">
+      <label for="RSA1">Si</label>
+      <input type="checkbox" name="servicios" id="RSA2" value="No">
+      <label for="RSA2" class="inline-label">No</label>
+    </fieldset><br>
+    <button type="submit">Enviar Inscripcion</button>
+  </form>
+
+</body>
+
+</html>
